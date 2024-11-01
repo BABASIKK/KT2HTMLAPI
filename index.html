@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Геолокация и Хранилища</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="marquee">
+        <span>$harabutdin</span>
+    </div>
+  <div id="app">
+    <button id="locate-btn">Определить местоположение</button>
+
+    <div id="coordinates-container">
+      <p id="coordinates">Координаты: -</p>
+    </div>
+
+    <h3 class="storage-header">Сохранить комментарий в LocalStorage</h3>
+    <form id="comment-form-ls">
+      <textarea id="comment-ls" placeholder="Введите комментарий..."></textarea>
+      <button type="button" id="save-ls-btn">Сохранить в LocalStorage</button>
+    </form>
+
+    <div id="storage-list">
+      <h3>Сохраненные данные (LocalStorage)</h3>
+      <ul id="localstorage-data"></ul>
+    </div>
+
+    <h3 class="storage-header">Сохранить комментарий в IndexedDB</h3>
+    <form id="comment-form-idb">
+      <textarea id="comment-idb" placeholder="Введите комментарий..."></textarea>
+      <button type="button" id="save-idb-btn">Сохранить в IndexedDB</button>
+    </form>
+
+    <div id="db-list">
+      <h3>Сохраненные данные (IndexedDB)</h3>
+      <ul id="indexeddb-data"></ul>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
